@@ -1,5 +1,5 @@
 
-# &#128199; Introduction
+# &#128199; Project Motivation
 
 This project aims to develop prediction methods for patients' in-hospital mortality using Machine Learning techniques, in addition to analyzing patients' observations to infer the relationship between observations and the in-hospital death (e.g. average Platelets levels and death/survival relationship). 
 
@@ -7,6 +7,8 @@ The data consist of records from 8000 ICU stays. All patients were adults who we
 Four thousand records comprise the training data (set A), and the remaining records are the test data (set B). Outcomes (the target column) are provided for the training set and withheld for the test set.
 
 Each observation has an associated time-stamp indicating the elapsed time of the observation since ICU admission in each case, in hours and minutes. Thus, for example, a time stamp of 35:19 means that the associated observation was made 35 hours and 19 minutes after the patient was admitted to the ICU. Moreover, Each record is stored as a comma-separated value (CSV) text file.
+
+In this project, we will discover the main features that distinguish each category (Survived + Death at the hospital). Also we will build a Machine Learning model for in-hospital motality prediction.
 
 The ICU patient's features are illustrated as follows:
 - Age (years)
@@ -92,7 +94,7 @@ The project is done using python3 and the data science packages. Following the l
 - `tqdm`: `tqdm` derives from the Arabic word taqaddum (تقدّم) which means "progress". The package is used to print the progress bar for the iterative processes.
 - `XGBoost`: `XGBoost` is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. It implements machine learning algorithms under the Gradient Boosting framework.
 
-# &#128202; Work Methodology and Results 
+# &#128202; Work Methodology and Analysis Results 
 
 By applying the data analysis techniques and visualization on set-A, we could infer that there are some observations correlated to in-hospital mortality. For instance, the Blood Urea Nitrogen (BUN) level is proportionally correlated with death/survival. Moreover, some features are dependent on each other like the Non-invasive diastolic arterial blood pressure (NIDiasABP) and the Non-invasive mean arterial blood pressure (NIMAP), Age, and Urine output.
 
@@ -114,5 +116,6 @@ Recommendation for Improvement: The data originally was collected in a time-seri
 - https://towardsdatascience.com/chi-square-test-for-feature-selection-in-machine-learning-206b1f0b8223
 - https://towardsdatascience.com/anova-for-feature-selection-in-machine-learning-d9305e228476
 
+**Note:** Feel free to discover more details about this project on my Medium: https://medium.com/@zaidamjadghazal/in-hospital-death-prediction-using-machine-learning-de10217cf20d
 
 
