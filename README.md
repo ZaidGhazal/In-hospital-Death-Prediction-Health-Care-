@@ -79,6 +79,7 @@ All files used are included in the repsotery. The following describes each file 
 - Outcomes-a.txt: Text file that contains the record ids and the target labels (Survived:0 / In-hospital_death:1) for the training data (set-a). The file also has other columns but they are execluded.
 - Outcomes-b.txt: Text file that contains the record ids and the target labels (Survived:0 / In-hospital_death:1) for the testing data (set-b). The file also has other columns but they are execluded.
 
+**Note:** Sets a and b (training and testing data) and the outcomes are included as Dataset.rar file 
 # &#128230; Libraries and Packages
 
 The project is done using python3 and the data science packages. Following the libraries used in details:
